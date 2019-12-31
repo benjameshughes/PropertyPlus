@@ -12,68 +12,75 @@
 </head>
 
 <body>
-    <section class="hero is-small hero-overlay">
+    <section class="hero hero-main is-small hero-overlay">
         <div class="hero-head">
             <header class="navbar is-spaced">
                 <div class="container">
+                    <nav class="navbar" role="navigation" aria-label="main navigation"></nav>
                     <div class="navbar-brand">
-                        <figure class="image is-32x32">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3387392/logo-small.png" alt="Logo">
-                        </figure>
+                        <!-- <figure class="image is-64x64"> -->
+                            <a href="index.html">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3387392/logo-small.png" alt="Logo" class="logo">
+                            </a>
+                        <!-- </figure> -->
 
-                        <span class="navbar-burger burger" data-target="navbarMenuHeroC">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </span>
+                        <a role="button" class="navbar-burger" data-target="burger" aria-label="menu" aria-expanded="false">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                          </a>
                     </div>
-                    <div id="navbarMenuHeroC" class="navbar-menu item-is-centered">
-                        <a class="navbar-item">About Us</a>
-                        <a class="navbar-item">Renters</a>
-                        <a class="navbar-item">Landlords</a>
-                        <a class="navbar-item">Blog</a>
+                    <div id="burger" class="navbar-menu item-is-centered">
+                        <a class="navbar-item" href="about.html">About Us</a>
+                        <a class="navbar-item" href="properties.html">Properties</a>
+                        <a class="navbar-item" href="#">Tenants</a>
+                        <a class="navbar-item" href="#">Landlords</a>
+                        <a class="navbar-item" href="#">Blog</a>
 
                     </div>
-                    <div class="navbar-end">
+                    <div class="navbar-end is-row">
                         <a class="navbar-item">
-                            <span class="icon is-large has-text-info">
-                                <i class="fas fa-2x fa-phone"></i>
+                            <span class="icon is-large has-text-success">
+                                <i class="fas fa-phone"></i>
                             </span>
+                            Call Us
                         </a>
                         <a class="navbar-item">
-                            <span class="icon is-large has-text-info">
-                                <i class="fas fa-2x fa-envelope"></i>
+                            <span class="icon is-large has-text-success">
+                                <i class="fas fa-envelope"></i>
                             </span>
+                            Message Us
                         </a>
                     </div>
+                </nav>
             </header>
         </div>
         <div class="hero-body">
             <div class="container hero-section">
                 <section class="section has-text-centered padding-medium">
                     <h1 class="title is-1 has-text-white has-text-weight-bold">Renting has never been so easy</h1>
-                    <h3 class="subtitle has-text-white">Corby based property manager</h3>
+                    <h3 class="subtitle has-text-white">Corby, Northamptonshire, based property manager helping you find the perfect living space</h3>
                     <div class="columns padding-small">
                         <div class="column">
                             <h1 class="title has-text-white is-3">Landords</h1>
                             <h3 class="subtitle has-text-white">From finding the best tenants to managing your property
                             </h3>
-                            <a class="button is-link is-outlined is-large">Find out more</a>
+                            <a class="button is-success is-large">Find out more</a>
                         </div>
                         <div class="column">
-                            <h1 class="title has-text-white is-3">Renters</h1>
+                            <h1 class="title has-text-white is-3">Tenants</h1>
                             <h3 class="subtitle has-text-white">From the perfect propety for you with no fuss and zero
                                 fees</h3>
-                            <a class="button is-link is-inverted is-large">Find out more</a>
+                            <a class="button is-success is-large">Find out more</a>
                         </div>
                     </div>
                 </section>
             </div>
         </div>
     </section>
-    <section class="section alt">
+    <section class="section alt has-text-centered">
         <div class="container">
-            <section class="section has-text-centered is-light">
+            
                 <h2 class="title is-2">What is Property Plus?</h2>
                 <p>Proident, culpa consequat. Veniam, officia cupidatat dolor elit, ex lorem tempor eu officia do cillum
                     magna velit elit, aliqua. Incididunt. Sit do aute voluptate lorem enim aliquip ut deserunt mollit in
@@ -81,7 +88,6 @@
                     aliqua. Culpa reprehenderit laboris velit magna id elit, tempor irure est labore ullamco eu
                     incididunt.
                     Aliquip cupidatat quis eu elit, null.</p>
-            </section>
         </div>
     </section>
     <section class="section">
@@ -102,7 +108,7 @@
                     </ul>
                 </div>
                 <div class="column">
-                    <h2 class="title">Renters</h2>
+                    <h2 class="title">Tenants</h2>
                     <p>Find the perfect space for you to call home</p>
                     <ul class="features">
                         <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
@@ -189,10 +195,10 @@
             </div>
         </div>
     </section>
-    <footer class="footer has-text-white has-background-dark has-text-centered">
+    <footer class="footer has-background-dark has-text-centered">
         <div class="content">
-            <p>
-                <strong>Property Plus Corby</strong> by <a href="https://benh.co.uk">Ben H.</a>
+            <p class="has-text-white">
+                <strong class="has-text-white">Property Plus Corby</strong> by <a href="#">Ben H.</a>
             </p>
         </div>
     </footer>
